@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color Side  */
+  /* color Main  */
+  --color-primary: #F6B100;
+  --color-secondary: #181A20;
+
+
+  /* color Others  */
+  --color-quick-silver: #9F9F9F;
+  --color-bright-gray: #EEEEEE;
+  --color-white-smoke: #F5F5F5;
+  --color-apple-red: #FF0B0B;
+  --color-purple-navy: #56548C;
+  --color-tan: #D8996C;
+
+
+  /* background colors  */
+  --color-white: #FFFFFF;
+  --color-lotion: #FCFCFC;
+
+
+  /* Font Side  */
+  /* Font Main  */
+  --font-main: "Urbanist", sans-serif;
+
+  /* Font Sizes  */
+  --text-xxs: 1.5rem;
+  --text-xs: 1.125rem;
+  --text-sm: 0.875rem;
+  --text-sm-spaced: 0.9375rem 12px;
+  --text-md: 0.8125rem 20px;
+  --text-lg: 0.75rem 20px;
+}
+
