@@ -32,5 +32,8 @@
   --text-sm-spaced: 0.9375rem 12px;
   --text-md: 0.8125rem 20px;
   --text-lg: 0.75rem 20px;
+
+  /* rating sizes  */
+  --text-sm-rating: 0.7rem;
 }
 
