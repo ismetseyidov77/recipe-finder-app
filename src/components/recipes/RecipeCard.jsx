@@ -3,14 +3,14 @@ import { Star } from 'lucide-react';
 
 function RecipeCard({ image, title, rating, category }) {
     return (
-        <div className="bg-white font-main flex flex-col justify-center p-2">
+        <div className="bg-white font-main flex flex-col p-2 h-full shadow-lg shadow-silver-500 rounded-xl">
 
             {/* card img side  */}
-            <div className="relative w-full">
-                <img
-                    className="w-full h-52"
-                    src={image}
-                    alt={title} />
+            <div className="relative w-full h-40 mb-3 items-end justify-center flex-shrink-0">
+                    <img
+                        className="h-full w-auto object-contain"
+                        src={image}
+                        alt={title} />
             </div>
 
             {/* food title  */}
@@ -19,9 +19,9 @@ function RecipeCard({ image, title, rating, category }) {
             </div>
 
             {/* category and rating side  */}
-            <div className="flex gap-8 items-center"> 
-                <span>{category}</span>
-                <div className="flex gap-0.5 justify-center items-center bg-primary w-9 h-4 rounded-lg">
+            <div className="flex gap-4 items-center">
+                <span className="whitespace-nowrap text-sm text-quick-silver">{category}</span>
+                <div className="flex justify-center items-center bg-primary w-9 h-4 rounded-lg">
                     <Star className="text-white" fill="white" size={12} strokeWidth={0.3} />
                     <span className="text-sm-rating text-white">{rating}</span>
                 </div>

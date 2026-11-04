@@ -19,6 +19,13 @@ function HealthyRecipes() {
             category: "Chicken & dal",
             image: salad2,
             rating: "4.5"
+        },
+        {
+            id: 3,
+            title: "Sewers Salad",
+            category: "Chicken & dal",
+            image: salad2,
+            rating: "4.4"
         }
     ])
 
@@ -34,7 +41,7 @@ function HealthyRecipes() {
 
             {/* food card layout side  */}
 
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
                 {recipesData.map((recipe) => (
                     <RecipeCard 
                         key={recipe.id}
