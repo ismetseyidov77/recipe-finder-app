@@ -19,18 +19,19 @@ function HealthyRecipes() {
             category: "Chicken & dal",
             image: salad2,
             rating: "4.5"
-        },
-        {
-            id: 3,
-            title: "Sewers Salad",
-            category: "Chicken & dal",
-            image: salad2,
-            rating: "4.4"
         }
     ])
 
+    // Clone card food 
+    const clonedRecipes = [
+        ...recipesData,
+        recipesData[0],
+        recipesData[1],
+        recipesData[0]
+    ]
+
     return (
-        <main className="w-full bg-white p-4 font-main">
+        <main className="w-full bg-white p-4 font-main md:p-7 lg:p-10">
             <div className="flex flex-col">
                 <h1 className="text-secondary font-bold text-xxs">Healthy Recipes</h1>
             </div>
@@ -40,16 +41,23 @@ function HealthyRecipes() {
             </div>
 
             {/* food card layout side  */}
-
-            <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
-                {recipesData.map((recipe) => (
-                    <RecipeCard 
-                        key={recipe.id}
-                        image={recipe.image}
-                        title={recipe.title}
-                        category={recipe.category}
-                        rating={recipe.rating}
-                    />
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 items-stretch mt-2">
+                {clonedRecipes.map((recipe, index) => (
+                    <div
+                        key={`${recipe.id}-${index}`}
+                        className={`
+                            ${index >= 2 ? "hidden md:block" : "block"}
+                            ${index >= 3 ? "md:hidden lg:block" : ""}
+                        `}
+                    >
+                        <RecipeCard
+                            key={recipe.id}
+                            image={recipe.image}
+                            title={recipe.title}
+                            category={recipe.category}
+                            rating={recipe.rating}
+                        />
+                    </div>
                 ))}
             </div>
 
