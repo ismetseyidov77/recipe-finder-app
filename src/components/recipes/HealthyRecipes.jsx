@@ -1,5 +1,7 @@
 import { useState } from "react";
 import RecipeCard from "./RecipeCard";
+import Button from "../ui/Button";
+import Description from "../ui/Description"
 
 import salad1 from "../../assets/recipes/ket-salad.png"
 import salad2 from "../../assets/recipes/sewers-salad.png"
@@ -31,13 +33,13 @@ function HealthyRecipes() {
     ]
 
     return (
-        <main className="w-full bg-white p-4 font-main md:p-7 lg:p-10">
+        <main className="w-full bg-bright-gray p-4 font-main md:p-7 lg:p-10">
             <div className="flex flex-col">
                 <h1 className="text-secondary font-bold text-xxs">Healthy Recipes</h1>
             </div>
             <div className="flex justify-between">
-                <p className="text-primary font-semibold text-xs">with features</p>
-                <button type="button" className="text-quick-silver text-sm cursor-pointer">See all</button>
+                <Description text="with features" />
+                <Button text="See all" />
             </div>
 
             {/* food card layout side  */}
