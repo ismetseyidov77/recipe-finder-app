@@ -34,7 +34,7 @@ const benefitsData = [{
 function Benefits() {
     return (
         // Benefits side 
-        <article className="w-full bg-bright-gray p-4 md:p-7 lg:p-10">
+        <article className="w-full bg-white-smoke p-4 md:p-7 lg:p-10">
             <div className="flex justify-between">
                 <Description text="with benefits" />
                 <Button text="See all" />

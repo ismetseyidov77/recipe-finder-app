@@ -33,7 +33,7 @@ function HealthyRecipes() {
     ]
 
     return (
-        <main className="w-full bg-bright-gray p-4 font-main md:p-7 lg:p-10">
+        <main className="w-full bg-white-smoke p-4 font-main md:p-7 lg:p-10">
             <div className="flex flex-col">
                 <h1 className="text-secondary font-bold text-xxs">Healthy Recipes</h1>
             </div>

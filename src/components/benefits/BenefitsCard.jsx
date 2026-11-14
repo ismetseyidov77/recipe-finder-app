@@ -4,7 +4,7 @@ import {Check} from "lucide-react"
 function BenefitsCard(props) {
     return (
         // BenefitsCard side 
-        <article className="w-full bg-white flex p-2 rounded-lg gap-3">
+        <article className="w-full bg-white flex p-2 rounded-lg gap-3 shadow-lg">
             <div>
                 <img src={props.image} alt={props.title} />
             </div>
