@@ -1,10 +1,11 @@
 import React from "react";
 import { Heart } from "lucide-react";
+import weeklyBg from '../../assets/weeklypick/weeklypick.png'
 
 function WeeklyPick() {
     return (
         // background image side 
-        <article className="bg-weekly-pick bg-cover bg-center w-full h-100 relative p-10">
+        <article style={{backgroundImage: `url(${weeklyBg})`}} className="bg-cover bg-center w-full h-100 relative p-10">
             <div className="flex justify-between items-center">
                 <button className="cursor-pointer"><Heart size={20} strokeWidth={1.5} className="text-white bg-secondary w-6 h-6" /></button>
                 <button className="bg-primary px-3 py-1 rounded-lg font-main text-white text-sm-spaced font-bold cursor-pointer">Start cook</button>

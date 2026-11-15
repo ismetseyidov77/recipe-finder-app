@@ -35,9 +35,5 @@
 
   /* rating sizes  */
   --text-sm-rating: 0.7rem;
-
-  /* background image weekly pick  */
-  --background-image-weekly-pick: url('./src/assets/weeklypick/weeklypick.png')
-
 }
 
